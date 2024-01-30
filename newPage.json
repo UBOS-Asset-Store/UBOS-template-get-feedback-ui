@@ -76,7 +76,7 @@
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
-                                                                "textColor": "#231F20",
+                                                                "textColor": "#495894",
                                                                 "truncateButtonColor": "#FFC13D",
                                                                 "widgetName": "Text1",
                                                                 "shouldTruncate": false,
@@ -113,7 +113,7 @@
                                                                 "key": "2fj83qejyh",
                                                                 "iconSVG": "/static/media/icon.cca02633.svg",
                                                                 "buttonVariant": "PRIMARY",
-                                                                "buttonColor": "#03B365",
+                                                                "buttonColor": "#495894",
                                                                 "disabledWhenInvalid": true,
                                                                 "resetFormOnClick": true,
                                                                 "widgetId": "y768yymldk",
@@ -135,7 +135,8 @@
                                                                 "placement": "CENTER",
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "onClick": "{{getFeedback.run(() => showAlert('scaning...'), () => {})}}"
+                                                                "onClick": "{{getFeedback.run(() => {}, () => {})}}",
+                                                                "classStyle": "generate_btn"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -172,7 +173,8 @@
                                                                 "bottomRow": 14,
                                                                 "parentId": "j5prso4txb",
                                                                 "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicTriggerPathList": [],
+                                                                "labelTextColor": "#495894"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -210,7 +212,8 @@
                                                                 "parentId": "j5prso4txb",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "tooltip": "The URL of the webpage you're seeking actionable feedback on."
+                                                                "tooltip": "The URL of the webpage you're seeking actionable feedback on.",
+                                                                "labelTextColor": "#495894"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -248,7 +251,8 @@
                                                                 "parentId": "j5prso4txb",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "tooltip": "Which areas would you prefer the AI to concentrate on for its feedback?"
+                                                                "tooltip": "Which areas would you prefer the AI to concentrate on for its feedback?",
+                                                                "labelTextColor": "#495894"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -283,7 +287,7 @@
                                                                 "parentId": "j5prso4txb",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "labelTextColor": "ChatGPT model"
+                                                                "labelTextColor": "#495894"
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -314,15 +318,20 @@
                                                 "rightColumn": 31,
                                                 "topRow": 0,
                                                 "bottomRow": 49,
-                                                "parentId": "y31wqgc6wv"
+                                                "parentId": "y31wqgc6wv",
+                                                "classStyle": "form_container",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [],
+                                                "borderRadius": "10",
+                                                "boxShadow": "VARIANT1"
                                             },
                                             {
-                                                "isVisible": true,
-                                                "text": "{{getFeedback.data}}",
+                                                "isVisible": "{{getFeedback.data ? true : false}}",
+                                                "text": "<h2 style=\"text-align: center; color:#495894; \">Feedback</h2>{{getFeedback.data}}",
                                                 "fontSize": "PARAGRAPH",
-                                                "fontStyle": "BOLD",
+                                                "fontStyle": "",
                                                 "textAlign": "LEFT",
-                                                "textColor": "#231F20",
+                                                "textColor": "#495894",
                                                 "truncateButtonColor": "#FFC13D",
                                                 "widgetName": "answer_text",
                                                 "shouldTruncate": false,
@@ -347,9 +356,20 @@
                                                 "dynamicBindingPathList": [
                                                     {
                                                         "key": "text"
+                                                    },
+                                                    {
+                                                        "key": "isVisible"
                                                     }
                                                 ],
-                                                "dynamicTriggerPathList": []
+                                                "dynamicTriggerPathList": [],
+                                                "classStyle": "answer_container",
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "isVisible"
+                                                    }
+                                                ],
+                                                "borderColor": "",
+                                                "borderWidth": ""
                                             }
                                         ],
                                         "minHeight": 400,
@@ -366,7 +386,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "",
+                                "classStyle": "main_container",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -382,7 +402,9 @@
                                 "rightColumn": 64,
                                 "topRow": 0,
                                 "bottomRow": 84,
-                                "parentId": "0"
+                                "parentId": "0",
+                                "dynamicBindingPathList": [],
+                                "dynamicTriggerPathList": []
                             }
                         ],
                         "dynamicTriggerPathList": []

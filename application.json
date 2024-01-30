@@ -3,7 +3,7 @@
     "name": "get-feedback-ui",
     "slug": "get-feedback-ui",
     "organizationId": "Org",
-    "isPublic": false,
+    "isPublic": true,
     "isMenu": false,
     "isShowPlatformTag": true,
     "createdAt": "2024-01-30T12:36:53.902Z",
@@ -38,7 +38,8 @@
         }
     ],
     "global_setting": {
-        "title": "Get Feedback to Webpage"
+        "title": "Get Feedback to Webpage",
+        "css": "${env.get(\"NODERED\")}/css"
     },
     "gitApplicationMetadata": {
         "browserSupportedRemoteUrl": "https://github.com/UBOS-Asset-Store/UBOS-template-get-feedback-ui",

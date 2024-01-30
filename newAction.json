@@ -10,7 +10,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://get-feedback-nr-65a79fff4632651100000001.ubos.tech"
+                    "url": "{{main.env.NODERED}}/getFeedback"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -39,8 +39,8 @@
                         "value": true
                     }
                 ],
-                "path": "/getFeedback",
-                "body": "{\n\t\"openAIKey\": {{JSON.stringify(key_input.text)}},\n\t\"model\": {{JSON.stringify(model_select.selectedOptionValue)}},\n\t\"url\": {{JSON.stringify(url_input.text)}},\n\t\"goal\": {{JSON.stringify(goal_input.text)}},\n}"
+                "path": "",
+                "body": "{\n\t\"openAIKey\": {{JSON.stringify(key_input.text)}},\n\t\"model\": {{JSON.stringify(model_select.selectedOptionValue)}},\n\t\"url\": {{JSON.stringify(url_input.text)}},\n\t\"goal\": {{JSON.stringify(goal_input.text)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -53,6 +53,7 @@
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
+                "main.env.NODERED",
                 "JSON.stringify(key_input.text)",
                 "JSON.stringify(model_select.selectedOptionValue)",
                 "JSON.stringify(url_input.text)",
@@ -62,7 +63,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-30T13:55:02.785Z",
-        "updatedAt": "2024-01-30T14:30:11.613Z",
+        "updatedAt": "2024-01-30T17:13:39.073Z",
         "deleted": false,
         "policies": [
             {
