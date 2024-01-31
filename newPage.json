@@ -115,7 +115,7 @@
                                                                 "buttonVariant": "PRIMARY",
                                                                 "buttonColor": "#495894",
                                                                 "disabledWhenInvalid": true,
-                                                                "resetFormOnClick": true,
+                                                                "resetFormOnClick": false,
                                                                 "widgetId": "y768yymldk",
                                                                 "renderMode": "CANVAS",
                                                                 "isLoading": false,
@@ -155,7 +155,7 @@
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
                                                                 "classStyle": "",
-                                                                "inputType": "TEXT",
+                                                                "inputType": "PASSWORD",
                                                                 "buttonPosition": "right",
                                                                 "type": "INPUT_WIDGET_V2",
                                                                 "hideCard": false,
@@ -189,7 +189,7 @@
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
                                                                 "resetOnSubmit": false,
-                                                                "isRequired": false,
+                                                                "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
                                                                 "classStyle": "",
@@ -213,7 +213,8 @@
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
                                                                 "tooltip": "The URL of the webpage you're seeking actionable feedback on.",
-                                                                "labelTextColor": "#495894"
+                                                                "labelTextColor": "#495894",
+                                                                "placeholderText": "https://www.readersdigest.co.uk/culture/music"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -252,7 +253,8 @@
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
                                                                 "tooltip": "Which areas would you prefer the AI to concentrate on for its feedback?",
-                                                                "labelTextColor": "#495894"
+                                                                "labelTextColor": "#495894",
+                                                                "placeholderText": "informativeness"
                                                             },
                                                             {
                                                                 "isVisible": true,
