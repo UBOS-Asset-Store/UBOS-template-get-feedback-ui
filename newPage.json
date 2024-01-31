@@ -174,7 +174,8 @@
                                                                 "parentId": "j5prso4txb",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
-                                                                "labelTextColor": "#495894"
+                                                                "labelTextColor": "#495894",
+                                                                "placeholderText": "sk-XXXXXXXX63Az1EeBM3rlT3BlbkFJQ4IOqyXXdhTgjqN2YbXX"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -406,7 +407,8 @@
                                 "bottomRow": 84,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
-                                "dynamicTriggerPathList": []
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": true
                             }
                         ],
                         "dynamicTriggerPathList": []
