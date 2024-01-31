@@ -259,7 +259,7 @@
                                                             {
                                                                 "isVisible": true,
                                                                 "placeholderText": "Select option",
-                                                                "labelText": "Label",
+                                                                "labelText": "ChatGPT Model",
                                                                 "labelPosition": "Top",
                                                                 "labelAlignment": "left",
                                                                 "labelWidth": 5,
