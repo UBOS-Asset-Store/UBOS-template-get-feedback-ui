@@ -72,7 +72,7 @@
                                                         "children": [
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Get feedback to webpage",
+                                                                "text": "Get Feedback To Webpage",
                                                                 "fontSize": "HEADING1",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -97,7 +97,8 @@
                                                                 "bottomRow": 5,
                                                                 "parentId": "j5prso4txb",
                                                                 "dynamicBindingPathList": [],
-                                                                "dynamicTriggerPathList": []
+                                                                "dynamicTriggerPathList": [],
+                                                                "classStyle": "title"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -119,8 +120,8 @@
                                                                 "widgetId": "y768yymldk",
                                                                 "renderMode": "CANVAS",
                                                                 "isLoading": false,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
+                                                                "leftColumn": 3,
+                                                                "rightColumn": 59,
                                                                 "topRow": 43,
                                                                 "bottomRow": 47,
                                                                 "parentId": "j5prso4txb",
@@ -167,8 +168,8 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 5.5,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
+                                                                "leftColumn": 3,
+                                                                "rightColumn": 59,
                                                                 "topRow": 7,
                                                                 "bottomRow": 14,
                                                                 "parentId": "j5prso4txb",
@@ -206,8 +207,8 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 5.5,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
+                                                                "leftColumn": 3,
+                                                                "rightColumn": 59,
                                                                 "topRow": 25,
                                                                 "bottomRow": 32,
                                                                 "parentId": "j5prso4txb",
@@ -246,8 +247,8 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 5.5,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
+                                                                "leftColumn": 3,
+                                                                "rightColumn": 59,
                                                                 "topRow": 34,
                                                                 "bottomRow": 41,
                                                                 "parentId": "j5prso4txb",
@@ -283,14 +284,49 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 5.5,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 0,
-                                                                "rightColumn": 64,
+                                                                "leftColumn": 3,
+                                                                "rightColumn": 59,
                                                                 "topRow": 16,
                                                                 "bottomRow": 23,
                                                                 "parentId": "j5prso4txb",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
                                                                 "labelTextColor": "#495894"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "iconName": "help",
+                                                                "borderRadius": "CIRCLE",
+                                                                "boxShadow": "NONE",
+                                                                "buttonColor": "#495894",
+                                                                "buttonVariant": "TERTIARY",
+                                                                "isDisabled": false,
+                                                                "widgetName": "IconButton1",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "ICON_BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Icon Button",
+                                                                "key": "6bxeimaxzs",
+                                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                                "widgetId": "py0zej861v",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 15.5,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 59,
+                                                                "rightColumn": 64,
+                                                                "topRow": 10,
+                                                                "bottomRow": 14,
+                                                                "parentId": "j5prso4txb",
+                                                                "dynamicBindingPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "onClick": "{{navigateTo('https://community.ubos.tech/vika/customersupportchatbot-1ac8', {},'NEW_WINDOW')}}",
+                                                                "dynamicPropertyPathList": []
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -320,7 +356,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 31,
                                                 "topRow": 0,
-                                                "bottomRow": 49,
+                                                "bottomRow": 52,
                                                 "parentId": "y31wqgc6wv",
                                                 "classStyle": "form_container",
                                                 "dynamicBindingPathList": [],
@@ -330,7 +366,7 @@
                                             },
                                             {
                                                 "isVisible": "{{getFeedback.data ? true : false}}",
-                                                "text": "<h2 style=\"text-align: center; color:#495894; \">Feedback</h2>{{getFeedback.data}}",
+                                                "text": "<h2 style=\"text-align: center; color:#495894; font-size:24px\">Feedback</h2>{{getFeedback.data}}",
                                                 "fontSize": "PARAGRAPH",
                                                 "fontStyle": "",
                                                 "textAlign": "LEFT",
@@ -354,7 +390,7 @@
                                                 "leftColumn": 31,
                                                 "rightColumn": 64,
                                                 "topRow": 0,
-                                                "bottomRow": 49,
+                                                "bottomRow": 52,
                                                 "parentId": "y31wqgc6wv",
                                                 "dynamicBindingPathList": [
                                                     {
@@ -384,7 +420,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 379.5,
                                         "topRow": 0,
-                                        "bottomRow": 510,
+                                        "bottomRow": 540,
                                         "parentId": "lijgkc2eqf"
                                     }
                                 ],
@@ -425,6 +461,7 @@
                         "url_input",
                         "goal_input",
                         "model_select",
+                        "IconButton1",
                         "answer_text"
                     ],
                     "deleted": false,
